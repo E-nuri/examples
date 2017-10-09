@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo -s
 apt update
 apt upgrade -y
 
