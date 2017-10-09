@@ -13,4 +13,11 @@ apt install -y php5.6
 #mysql
 apt install -y mysql-client mysql-server phpmyadmin
 
+#nginx-php connect
+apt install -y php5.6-fpm
+#config files fix~~~~
+#service reboot
+service nginx restart
+nginx -t
+
 
