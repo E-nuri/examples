@@ -20,4 +20,14 @@ apt install -y php5.6-fpm
 service nginx restart
 nginx -t
 
+# phpmyadmin connect
+# make symbolic link to Webroot(/asdf)
+# ln -s /usr/share/phpmyadmin /asdf
+
+# php mbstring
+apt install -y php5.6-mbstring
+
+#mysql install for phpmyadmin 
+apt install -y php5.6-mysql
+
 
