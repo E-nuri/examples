@@ -1,7 +1,6 @@
 #!/bin/bash
 sudo -s
-apt update
-apt upgrade -y
+apt update && apt upgrade -y
 
 #nginx
 apt install -y nginx
@@ -10,8 +9,7 @@ apt install -y nginx
 
 #php
 add-apt-repository ppa:ondrej/php
-apt update
-apt upgrade
+apt update && apt upgrade -y
 apt install -y php5.6
 
 #nginx-php connect
@@ -30,12 +28,8 @@ nginx -t
 # make symbolic link to Webroot(/asdf)
 # ln -s /usr/share/phpmyadmin /asdf
 
-#mysql install for phpmyadmin 
+#mysql install for phpmyadmin mysql and php-mbstring
 apt install -y php5.6-mysql
-
-# install php-mbstring for phpmyadmin
 apt install -y php5.6-mbstring
 
-
 #enter /phpmyadmin
-
